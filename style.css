@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+flex-direction: column;
+/* gap: 20px; */
+}
+ img{
+    height: 70px;
+ }
+
+/* header{
+    width: 100%;
+} */
+
+.mobile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    /* outline: auto; */
+}
+
+/* this is the hamburger icon and its content */
+.topNav{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+ } 
+
+ .centered-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 7px;
+  width: 100%;
+ }
+ .active{
+  overflow: hidden;
+}
+.topNav .active img{
+  height: 50px;
+  width: 150px;
+  object-fit: contain;
+
+}
+.topNav #myLinks {
+    text-decoration: none;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.topNav #myLinks li a{
+    color: black;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+.topNav #myLinks li a:hover{
+  background: rgba(48, 46, 46, 0.438);
+}
+
+
+
+ .icon{
+   background: white;
+   display: block;
+    padding: 20px;
+  text-align: center;
+    margin-top: 2px;
+    margin-left: 2px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   font-size: 20px;
+}
+ .icon i{
+color: black;
+}
+
+/* .topNav a :hover{
+   background-color: black;
+   color: rgb(255, 255, 255);
+} */
+
+#myLinks{
+    display: none;
+}
+
+
+
+
+/* main page */
+.section-one-text-and-image-and-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.grateful-header-image{
+height: 100%;
+width: 100%;
+position: relative;
+margin-bottom: 20px;
+overflow: hidden;
+text-align: center;
+}
+
+.grateful-header-image img{
+height: fit-content;
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.section-one-text{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.531);
+}
+.section-one-text p{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.section-one-text-and-image-and-button a{
+    height: fit-content;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 11px;
+    font-family: sans-serif;
+    border: 1px solid black;
+}
+.section-one-text-and-image-and-button a:hover{
+    color: white;
+    background: black;
+    border: 1px solid black;
+}
+
+
+
+
+/* section two */
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+.section-two-Image{
+    height: 100%;
+width: 100%;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.section-two-Image img{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-two-text-and-button{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: rgba(0, 0, 0, 0.531);
+}
+.section-two-text-and-button p{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 10em;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.section-two-text-and-button a{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    width: 15em;
+    border: 2px solid white;
+    background-color: black;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    color: white;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.section-two-text-and-button a:hover{
+
+    font-size: 13.5px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+
+/* section three */
+
+.section-Three{
+    background: rgb(24, 24, 24);
+    padding: 20px 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+ 
+}
+.section-three-intro-message{
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid rgb(207, 207, 207);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+.section-three-intro-message h3{
+ font-size: 12px;
+ color: rgb(207, 207, 207);
+ font-family: sans-serif;
+ font-weight: 800;
+}
+.section-three-slider-images{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+
+}
+.section-three-slider-images img{
+    display: flex;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    /* margin: auto; */
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 9px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    user-select: none;
+    background: black;
+    border-radius: 50%;
+  }
+  
+  /* Position the "next button" to the right */
+  .prev {
+    left: 12px;
+    background: black;
+    /* border-radius: 3px 0 0 3px; */
+  }
+  .next {
+    right: 12px;
+    background: black;
+    /* border-radius: 3px 0 0 3px; */
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    background: rgb(33, 32, 32);
+    font-weight: 800;
+    padding: 8px 12px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    top: 0;
+    border-top-left-radius: 10px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+ .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .section-Three-btn{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .section-Three-btn a{
+    background: white;
+  margin: 10px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: rgb(37, 34, 34);
+  padding: 10px 25px;
+  border-radius: 15px;
+  font-size: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(241, 236, 236);
+    bottom: 0;
+}
+.footer-links{
+  margin: 0px 10px;
+
+}
+.footer-links ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    place-content: center;
+}
+.footer-links ul li{
+  margin-top: 10px;
+}
+.footer-links ul li a{
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding: 10px 5px; 
+  transition: all 2s;
+  border-radius: 4px;
+}
+.footer-links ul li a:hover{
+background-color: rgb(47, 47, 47);
+}
+
+.footer-social-media-links{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* outline: auto; */
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    left: 15px;
+}
+.footer-social-media-links a{
+   font-size: 17px;
+}
+.footer-social-media-links a:nth-of-type(1){
+   color: white;
+   height: 20px;
+   width: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   /* padding: 5px; */
+   background:  linear-gradient( rgb(100, 6, 100) , rgb(249, 11, 119), rgb(249, 18, 18), rgb(255, 42, 0), rgb(255, 204, 0));
+}
+.footer-social-media-links a:nth-of-type(2){
+   color: white;
+   height: 20px;
+   width: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   /* padding: 5px; */
+   background: rgb(0, 220, 81);
+}
+
+footer p{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-size: 10px;
+    font-weight: 600;
+  font-family: sans-serif;
+    /* font-style: italic; */
+    width: 100%;
+    padding: 20px 0px;
+    color: black;
+    background: white;
+}

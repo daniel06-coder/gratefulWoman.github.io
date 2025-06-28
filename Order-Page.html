@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon/graceful woman logo.png">
+    <link rel="stylesheet" href="Order-Page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "oBRXVUTSm4mRWNcO5",
+    });
+    })();
+    </script>
+    
+    <title>ORDER</title>
+</head>
+<body>
+    
+    <header>
+
+        <nav class="mobile-container">
+
+            <div class="topNav">
+
+                <a href="#" class="active"><img src="images/graceful woman nav logo 2.jpg" alt="" ></a>
+
+          
+                <ul id="myLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Collections.html">COLLECTIONS</a></li>
+                    <li><a href="fashion-gallery.html">FASHION GALLERY</a></li> 
+                    <li><a href="process.html">PROCESS</a></li>
+                    <!-- NON BRIDAL -->
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="Order-Page.html">MAKE AN ORDER</a></li>
+                
+        </ul>
+
+        
+
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        </nav>  
+
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="section-one-Order-Page">
+                <div class="Order-Page-image">
+                    <img src="https://media.istockphoto.com/id/1399744845/photo/beautiful-women-floral-black-clutch-wedding-bag-and-gold-heel.jpg?s=612x612&w=0&k=20&c=oZ7gL4c-8LNyvYA5kmQaoNN4PebGztm-vhMkhsEFkJo=" alt="">
+    
+                    <div class="Order-Page-text">
+                        <p>NON BRIDAL DRESSES</p>
+                    </div>
+            </div>
+               
+            </div>
+    
+        </section>
+
+
+        <section>
+            <div class="Order-Page-second-section-heading-detail-and-form">
+                   
+                    <p>Please fill in the required information, we will get back to you once the message is recevied. </p>
+
+
+                    <form action="#" class="enquiry-order-questionaire">
+
+                        <label for="Firstname">Name:</label>
+                        <input type="text" name="Firstname"
+                        id="firstName"
+                        placeholder="Emmanueul" required>
+
+                        <label for="Lastname" style="display: none;">Name:</label>
+                        <input type="text" name="Lastname" 
+                        id="lastName"
+                        placeholder="Jacob" required>
+
+                        <label for="Email">Email:</label>
+                        <input name="Email-input" type="text" 
+                        id="email"
+                        placeholder="ananymous123@gmail.com" required>
+
+                        <label for="Phone number">Your Whatsapp number. (this will be your primarycontact detail with us, please enter correctly or we may not be able to reach you)</label>
+                        <input type="tel" name="phone-no" id="phone" placeholder="+234" required>
+
+
+                        <label for="delivery">When do you need your dresses? (Delivery date must be at least 10 days after order is placed)</label>
+                        <input type="date" 
+                        id="delivery"
+                        name="delivery-date" placeholder="" required>
+
+                        
+                        <label for="Phone number">Which Service are you intreseted in</label>
+
+                        <div class="select-options">
+                          
+                        <span><input type="radio" name="select-option" 
+                            id="select-option"
+                            value=" Bespoke enquiry and white wedding dress" required>  Bespoke enquiry and white wedding dress</span>
+
+                          
+                        <span>  <input type="radio" name="select-option" 
+                            id="select-option" value="Bespoke enquiry and white wedding dress" required> Bespoke enquiry and white wedding dress</span>
+
+                        
+                        <span>  <input type="radio" name="select-option" id="select-option" value="Bespoke enquiry and white wedding dress" required>Bespoke enquiry and white wedding dress</span>
+
+                        
+                        <span> <input type="radio" name="select-option" id="select-option" value="Bespoke enquiry and white wedding dress" required> Bespoke enquiry and white wedding dress</span>
+                    </div>
+
+                    <div class="enquiry-do-you-need-shipping">
+                    <label for="Phone number">Do you require shipping</label>
+                    
+                    <span>YES <input type="checkbox" id="answer-question" name="answer"  value="Yes, it's needed"></span>
+                   
+                    <span>NO <input type="checkbox" name="answer" id="answer-question" value="No, its's not needed"></span>
+                     </div>
+
+                    <label for="address">Full Delivery address, please make sure it includes your, country, state, and city (if you require home delivery full address should be included)</label>
+                    <input type="text" name="input-address" 
+                    id="delivery-address"
+                    placeholder="No 13, Southern Tokyo District, Abuja." required>
+
+                    <label for="additional-info">Any Additional information you might want to add?</label>
+
+                    <textarea name="message" id="message" ></textarea>
+
+                    <button type="button" onclick="sendMail()">SUBMIT</button>
+                    
+                    </form>
+            </div>
+
+            <div class="other-ways-to-order">
+                <!-- add a floral icon to the click here -->
+                <p>Lost ?? <a href="process.html">Click Here 🌸</a> for a step by step guide</p>
+                <p>OR</p>
+                <p>You can order via <a href="#">Whatsapp <i class="fa-brands fa-whatsapp"></i> </a> </p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Bridal Collection</a></li>
+                <li><a href="#">Book an Appointment</a></li>
+                <li><a href="#">Make an Enquiry</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-social-media-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    
+        <p>@2025 Graceful Woman</p>
+    </footer>
+
+
+    <script src="Order-Page.js"></script>
+</body>
+</html>
