@@ -12,92 +12,111 @@ img {
   height: 70px;
 }
 
-/* header{
-    width: 100%;
-} */
-
-.mobile-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+header{
   width: 100%;
-  margin: auto;
-  background-color: white;
-  /* outline: auto; */
+  background: none;
+}
+
+.mobile-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin: auto;
+position: fixed;
+z-index: 2;
+background: none;
+/* outline: auto; */
 }
 
 /* this is the hamburger icon and its content */
-.topNav {
-  width: 100%;
-  height: fit-content;
-  position: relative;
-  background-color: white;
-  overflow: hidden;
+.topNav{
+width: 100%;
+height: fit-content;
+position: relative;
+background: hsla(0, 0%, 100%, 0.18);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 0.5px solid hsla(0, 0%, 100%, 0.5);
+overflow: hidden;
+} 
+
+.centered-logo{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 7px;
+width: 100%;
 }
 .active{
-  /* background: #04AA6D; */
-  position: relative;
-  top: 8px;
-  left: 90px;
-  overflow: hidden;
+overflow: hidden;
 }
 .topNav .active img{
-  height: 50px;
-  width: 150px;
-  object-fit: contain;
+height: 50px;
+width: 120px;
+object-fit: contain;
 
 }
 .topNav #myLinks {
-  text-decoration: none;
-  width: 100%;
-  height: fit-content;
-  background-color: white;
+text-decoration: none;
+width: 100%;
+height: fit-content;
+background: hsla(0, 0%, 100%, 0.18);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 0.5px solid hsla(0, 0%, 100%, 0.5);
 }
-.topNav #myLinks li a {
-  color: black;
-  padding-left: 10px;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: sans-serif;
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: fit-content;
-  align-self: center;
-  justify-content: center;
-  width: 100%;
+.topNav #myLinks li a{
+color: hsl(0, 0%, 0%, 0.7);
+padding-left: 10px;
+text-decoration: none;
+font-size: 12px;
+font-family: sans-serif;
+display: block;
+padding-top: 20px;
+padding-bottom: 20px;
+height: fit-content;
+align-self: center;
+justify-content: center;
+width: 100%;
 }
-.topNav #myLinks li a:hover {
-  background: rgba(48, 46, 46, 0.438);
+.topNav #myLinks li a:hover{
+background: rgba(165, 165, 165, 0.863);
 }
 
-.icon {
-  background: white;
-  display: block;
-  padding: 20px;
-  text-align: center;
-  margin-top: 2px;
-  margin-left: 2px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 20px;
+
+
+.icon{
+display: block;
+padding: 14.5px;
+text-align: center;
+margin-top: 2px;
+margin-left: 2px;
+position: absolute;
+right: 0;
+top: 0;
+font-size: 20px;
 }
-.icon i {
-  color: black;
+.icon i{
+color: white;
 }
 
 /* .topNav a :hover{
-   background-color: black;
-   color: rgb(255, 255, 255);
+ background-color: black;
+ color: rgb(255, 255, 255);
 } */
 
-#myLinks {
+#myLinks{
   display: none;
 }
 
+
 /* Main */
+main{
+  padding-block-start: 50px;
+}
 
 .personal-order-process {
   display: flex;
@@ -334,16 +353,16 @@ footer {
   background: rgb(0, 220, 81);
 }
 
-footer p {
+footer p{
   text-align: center;
   position: relative;
   bottom: 0;
   font-size: 10px;
   font-weight: 600;
-  font-family: sans-serif;
+font-family: sans-serif;
   /* font-style: italic; */
   width: 100%;
   padding: 20px 0px;
-  color: black;
-  background: white;
+  color: #FFF200;
+  background: rgb(14, 13, 13);
 }
