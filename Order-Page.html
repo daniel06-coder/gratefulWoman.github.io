@@ -27,22 +27,22 @@
 
             <div class="topNav">
 
-                <a href="#" class="active"><img src="images/graceful woman nav logo 2.jpg" alt="" ></a>
-
+                <div class="centered-logo">
+                <a href="#" class="active"><img src="images/grace.png" alt="" ></a>
+            </div>
           
-                <ul id="myLinks">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="Collections.html">COLLECTIONS</a></li>
-                    <li><a href="fashion-gallery.html">FASHION GALLERY</a></li> 
-                    <li><a href="process.html">PROCESS</a></li>
-                    <!-- NON BRIDAL -->
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="Order-Page.html">MAKE AN ORDER</a></li>
-                
-        </ul>
+            <ul id="myLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Order-Page.html">MAKE AN ORDER</a></li>
+                <li><a href="fashion-gallery.html">FASHION GALLERY</a></li> 
+                <li><a href="process.html">PROCESS</a></li>
+                <!-- NON BRIDAL -->
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="Collections.html">MAKE A PAYMENT</a></li>
+            
+    </ul>
 
         
-
 
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
         </nav>  
@@ -104,27 +104,27 @@
 
                         <div class="select-options">
                           
-                        <span><input type="radio" name="select-option" 
-                            id="select-option"
-                            value=" Bespoke enquiry and white wedding dress" required>  Bespoke enquiry and white wedding dress</span>
-
-                          
-                        <span>  <input type="radio" name="select-option" 
-                            id="select-option" value="Bespoke enquiry and white wedding dress" required> Bespoke enquiry and white wedding dress</span>
-
-                        
-                        <span>  <input type="radio" name="select-option" id="select-option" value="Bespoke enquiry and white wedding dress" required>Bespoke enquiry and white wedding dress</span>
-
-                        
-                        <span> <input type="radio" name="select-option" id="select-option" value="Bespoke enquiry and white wedding dress" required> Bespoke enquiry and white wedding dress</span>
+                            <span><input type="radio" name="select-option" 
+                                id="select-option"
+                                value=" Bespoke enquiry and white wedding dress" required>  Bespoke enquiry and white wedding dress</span>
+    
+                              
+                            <span>  <input type="radio" name="select-option" 
+                                id="select-option" value=" A Top with a matching skirt to boot" required> A Top with a matching skirt to boot</span>
+    
+                            
+                            <span>  <input type="radio" name="select-option" id="select-option" value="Traditional wedding Fit just for you" required> Traditional wedding Fit just for you</span>
+    
+                            
+                            <span> <input type="radio" name="select-option" id="select-option" value=" tote bag and home made dresses to match" required> tote bag and home made dresses to match</span>
                     </div>
 
                     <div class="enquiry-do-you-need-shipping">
                     <label for="Phone number">Do you require shipping</label>
                     
-                    <span>YES <input type="checkbox" id="answer-question" name="answer"  value="Yes, it's needed"></span>
+                    <span>YES <input type="radio" id="answer-question" name="answer"  value="Yes, it's needed"></span>
                    
-                    <span>NO <input type="checkbox" name="answer" id="answer-question" value="No, its's not needed"></span>
+                    <span>NO <input type="radio" name="answer" id="answer-question" value="No, its's not needed"></span>
                      </div>
 
                     <label for="address">Full Delivery address, please make sure it includes your, country, state, and city (if you require home delivery full address should be included)</label>
@@ -136,7 +136,8 @@
 
                     <textarea name="message" id="message" ></textarea>
 
-                    <button type="button" onclick="sendMail()">SUBMIT</button>
+                    <button type="button" onclick="sendMail()"   href='#'>SUBMIT</button>
+                    
                     
                     </form>
             </div>
