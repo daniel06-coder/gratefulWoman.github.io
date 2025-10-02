@@ -8,7 +8,7 @@
 body{
 display: flex;
 flex-direction: column;
-background: white
+background: hsla(0, 0%, 0%, 0.53)
 /* gap: 20px; */
 }
  img{
