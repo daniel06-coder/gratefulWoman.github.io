@@ -100,7 +100,7 @@ top: 0;
 font-size: 20px;
 }
 .icon i{
-color: hsl(0, 0%, 0%);
+color: white;
 }
 
 /* .topNav a :hover{
@@ -509,9 +509,3 @@ box-sizing: border-box;
 /* .pop-up{
 
 } */
-
-@media(min-width: 426px){
-  *{
-    display: none;
-  }
-}

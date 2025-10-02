@@ -34,8 +34,7 @@ function sendMail() {
     additionalInfo: document.getElementById("message").value,
   };
 
-  // emailjs.send("service_srztsqx", "template_4oett0h", params).then(
-  emailjs.send("service_srztsqx", "template_u9uj4xo", params).then(
+  emailjs.send("service_srztsqx", "template_4oett0h", params).then(
     function (response) {
       alert("Your email has been sent successfully!");
     },

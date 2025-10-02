@@ -104,7 +104,7 @@ top: 0;
 font-size: 20px;
 }
 .icon i{
-color: hsl(0, 0%, 0%);
+color: white;
 }
 
 /* .topNav a :hover{
@@ -264,10 +264,4 @@ footer p{
     padding: 20px 0px;
     color: #FFF200;
     background: rgb(14, 13, 13);
-}
-
-@media(min-width: 426px){
-  *{
-    display: none;
-  }
 }
