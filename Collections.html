@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Collections.css">
+    <link rel="icon" href="favicon/graceful woman logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Our Collections</title>
+</head>
+<body>
+    
+    <header>
+
+        <nav class="mobile-container">
+
+            <div class="topNav">
+
+                <div class="centered-logo">
+                <a href="#" class="active"><img src="images/grace.png" alt="" ></a>
+            </div>
+          
+            <ul id="myLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Order-Page.html">MAKE AN ORDER</a></li>
+                <li><a href="fashion-gallery.html">FASHION GALLERY</a></li> 
+                <li><a href="process.html">PROCESS</a></li>
+                <!-- NON BRIDAL -->
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="Collections.html">MAKE A PAYMENT</a></li>
+            
+    </ul>
+
+        
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        </nav>  
+
+
+    </header>
+
+
+
+
+    <main>
+
+        <section>
+                
+            <div class="payment-page">
+
+                
+                <h2>You can pay For your Products Here</h2>
+                <p class="notice">Note that international payment are done mainly through the website, local payment can be done through the website or through the second option which is to pay through whatsapp</p>
+
+                <button onclick="payWithPaystack()">Pay Now</button>
+
+                <span>You can also pay via <a href="#"><i class="fa-brands fa-whatsapp"></i></a></span>
+
+                </div>
+
+              
+                <!-- Paystack Script -->
+                <script src="https://js.paystack.co/v1/inline.js"></script>
+              
+                <script>
+                  function payWithPaystack() {
+                    var handler = PaystackPop.setup({
+                      key: 'pk_test_93b93a9578f03c553f652e14778f90c2a86fc205', // replace with your Paystack public key
+                      email: 'anyanwud898@gmail.com',
+                      amount: 5000 * 100, // Amount in kobo (5000 NGN = ₦50), for USD convert appropriately
+                      currency: "NGN", // Accept international payments in USD (you can also use GHS, ZAR, etc.)
+                      ref: '' + Math.floor((Math.random() * 1000000000) + 1), // Unique reference
+                      callback: function(response) {
+                        alert('Payment successful! Transaction reference: ' + response.reference);
+                        // Here you can call your backend or show success page
+                      },
+                      onClose: function() {
+                        alert('Payment window closed.');
+                      }
+                    });
+              
+                    handler.openIframe();
+                  }
+                </script>
+
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer-links">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fashion-gallery.html">Fashion Gallery</a></li>
+            <li><a href="Collections.html">Make a Payment</a></li>
+            <li><a href="Order-Page.html">Make an Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+    
+        <div class="footer-social-media-links">
+            <a href="https://www.instagram.com/gracefulwomencollections?igsh=MTNvdjE1bjBwNnpkMw=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    
+        <p>@2025 Graceful Woman</p>
+    </footer>
+
+
+
+
+    <script src="Collections.js"></script>
+</body>
+</html>
