@@ -103,8 +103,8 @@ right: 0;
 top: 0;
 font-size: 20px;
 }
-.icon i{
-color: white;
+ .icon i{
+color: rgba(46, 46, 46, 0.932);
 }
 
 /* .topNav a :hover{
